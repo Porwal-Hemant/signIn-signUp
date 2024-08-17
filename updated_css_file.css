@@ -1,0 +1,107 @@
+* {  
+    margin: 0;  
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {  
+    width: 100%; 
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)), url(login_page_imahge.jpg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {   
+    width: 90%; 
+    max-width: 450px; 
+    background: #fff; 
+    padding: 40px 50px 60px; /* Adjusted padding to reduce height */
+    text-align: center; 
+    border-radius: 10px; /* Added border-radius for a nicer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for better aesthetics */
+}
+
+.form-box h1 {  
+    font-size: 28px; /* Slightly reduced font size */
+    margin-bottom: 30px; /* Adjusted margin */
+    color: #3c00a0; 
+    position: relative; 
+}
+
+.form-box h1::after {    
+    content: ''; 
+    width: 30px; 
+    height: 4px; 
+    border-radius: 3px; 
+    background: #3c00a0;
+    position: absolute; 
+    bottom: -12px; 
+    left: 50%; 
+    transform: translateX(-50%);  
+}
+
+.input-field {
+    background: #eaeaea;
+    margin: 10px 0; 
+    border-radius: 3px; 
+    display: flex; 
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s; 
+    overflow: hidden; 
+}
+
+input {  
+    width: 100%;
+    background: transparent; 
+    border: 0; 
+    outline: 0; 
+    padding: 15px 10px; /* Reduced padding to fit content better */
+}
+
+.input-field i {
+    margin-left: 10px; /* Adjusted margin */
+    color: #999; 
+} 
+
+form p { 
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a { 
+    text-decoration: none; 
+    color: #3c00a0; 
+} 
+
+.btn-field { 
+    width: 100%;  
+    display: flex; 
+    justify-content: space-between;
+}
+
+.btn-field button { 
+    flex-basis: 48%;
+    background: #3c00a0; 
+    color: #fff; 
+    height: 40px; 
+    border-radius: 20px; 
+    border: 0; 
+    outline: 0; 
+    cursor: pointer; 
+    transition: background 1s; 
+}
+
+.input-group {
+    height: 350px; /* Adjusted height to fit all input fields */
+}
+
+.btn-field button.disable {  
+    background: #eaeaea; 
+    color: #555; 
+}
